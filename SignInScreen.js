@@ -54,8 +54,8 @@ const SignInScreen = () => {
             <Image source={Logo} style={[styles.logo,{height:height*0.3}]} resizeMethod="contain"/>
             <CustomInput name="username" placeholder="Username" control={control} />
             <CustomInput name="password" placeholder="Password" control={control}  secureTextEntry={true}/>
-            <CustomButtons text={loading ? "Loading...": "Sign In"} onPress={handleSubmit(onSignInPressed)} type = "container_PRIMARY"/>
-            <CustomButtons text="Forgot Password?" onPress={onForgotPress} type = 'container_TERTIARY'/>
+            <CustomButtons text={loading ? "Loadind...": "Sign In"} onPress={handleSubmit(onSignInPressed)} type = "container_PRIMARY"/>
+            <CustomButtons text="Forgot Password?" onPress={onForgotPress} type = 'container_PRIMARY'/>
             <CustomButtons text="Don't have an account? Create One" onPress={onSignUpPressed} type = 'container_TERTIARY'/>
             
 
