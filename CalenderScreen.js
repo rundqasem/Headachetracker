@@ -24,7 +24,7 @@ const onMedicationPress =() =>{
   return (
      <SafeAreaView style={styles.container}>
      
-      <CalendarList
+      <Calendar
       
         pastScrollRange={50}
         futureScrollRange={50}
@@ -32,7 +32,7 @@ const onMedicationPress =() =>{
         showScrollIndicator={false}
         onDayPress={
           (day) => setSelectedDate({[day.dateString]:{selected: true,
-              selectedColor: 'blue', marked:true}})
+              selectedColor: 'purple', marked:true}})
           }
           onDaySelected={
             (day)=>console.log('Selected date: ', day.dateString)
