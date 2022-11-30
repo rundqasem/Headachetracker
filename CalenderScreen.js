@@ -24,7 +24,7 @@ const onMedicationPress =() =>{
   return (
      <SafeAreaView style={styles.container}>
      
-      <CalendarList
+      <Calendar
       
         pastScrollRange={50}
         futureScrollRange={50}
